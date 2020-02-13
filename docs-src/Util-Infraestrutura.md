@@ -10,6 +10,6 @@ Os softwares que serão utilizados ao longo do semestre são:
 
 Você irá receber um SSD com Linux e a infra de elementos já instalada. Detalhes dessa instalação pode se encontrado em:
 
-- [Infraestrutura Detalhada](Infraestrutura-Detalhada)
+- [Infraestrutura Detalhada](https://github.com/Insper/404/blob/master/elementos/Guia_Instalacao_Quartus17.01_CycloneV_ModelSim.md)
 
 

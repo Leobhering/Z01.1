@@ -1,31 +1,29 @@
+# 
+
 Esse projeto tem como objetivo trabalhar com os conceitos básicos de portas lógicas feitas a base de transistores discretos do tipo BJT. Cada grupo receberá uma equação lógica que deverá implementar e caberá ao grupo decidir a melhor forma de separação de trabalho que privilegie a distribuição de tarefas.
 
-### Materiais
+## Entrega
 
-Cada grupo receberá:
+A entrega é composta da implementação de uma equação lógica em transistores e de uma documentação.
 
-- Duas protoboards
-- Duas baterias 9V
-- Jumpers macho-macho
-- 12 transistores BJT-N BC337
-- 24 resistores de 2k $\Omega$
-- 6 LEDs coloridos (Vermelho, amarelo e verde)
+### Implementação
 
-Poderão utilizar a quantidade que material recebido que acharem necessário para realizarem a equação lógica, não podendo superar a quantidade aqui descrita.
 
-# Entrega
 
-## Documentação
+### Documentação
 
-Um documento descrevendo a solução empregada deve ser apresentando. O documento deve conter : A equação lógica original, sua tabela verdade e a equação lógica implementada, diagrama de blocos lógico (contendo as portas lógicas) e o RTL do circuito (diagrama com os transistores e resistores), uma foto do circuito montado e um link para um vídeo do circuito funcionando.
+Um documento descrevendo a solução empregada deve ser apresentando. O documento deve conter: A equação lógica original, sua tabela verdade e a equação lógica implementada, diagrama de blocos lógico (contendo as portas lógicas) e o RTL do circuito (diagrama com os transistores e resistores), uma foto do circuito montado e um link para um vídeo do circuito funcionando.
 
-- **Não esqueçam da documentação, ela é tão importante quanto a implementação!**
+!!! warning 
+    Não esqueçam da documentação, ela é tão importante quanto a implementação!
 
 Uma tabela verdade do circuito deve ser apresentada e em aula e uma demonstração que o circuito representa a tabela deve ser feita.
 
-- **Simulador**: Os grupos devem utilizar simuladores online tal como o [circuitLab](https://www.circuitlab.com/circuit/8kqd6b55q67e/bjt-not/) para validarem suas ideias antes de executarem o projeto, a simulação deverá ser entregue em conjunto com a implementação em hardware.
+### Simulador
 
-## Local 
+Os grupos podem utilizar simuladores online tal como o [circuitLab](https://www.circuitlab.com/circuit/8kqd6b55q67e/bjt-not/) para validarem suas ideias antes de executarem o projeto.
+
+### Local 
 
 A entrega da documentação deve ser realizada via github no Fork realizado pelo grupo na pasta:
 
@@ -33,9 +31,10 @@ A entrega da documentação deve ser realizada via github no Fork realizado pelo
 
 Para isso será necessário realizar o [B-Circuitos-Integrados-Lab-](B-Circuitos-Integrados-Lab-2).
 
-> Na entrega todos os integrantes do grupo já devem fazer parte do repositório!
+!!! warning 
+    Na entrega todos os integrantes do grupo já devem fazer parte do repositório!
 
-# Rubricas
+## Rubricas
 
 | Nota máxima | Descritivo                                             |
 |-------------|--------------------------------------------------------|

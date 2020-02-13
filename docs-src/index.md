@@ -1,5 +1,7 @@
 # Bem vindo disciplina de Elementos de Sistemas!
 
+[![Gitter](https://badges.gitter.im/Z01-1/community.svg)](https://gitter.im/Z01-1/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 ![](figs/icon-elementos.png)
 
 - **Curso:** Engenharia Da Computação - Terceiro semestre

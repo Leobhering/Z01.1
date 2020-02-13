@@ -19,10 +19,10 @@ Além dos módulos principais, deverá ser entregue um módulo que faz o acionam
     Este  projeto é para ser realizado 
     por todos os integrantes do grupo.
     
-    Tarefas devem ser criadas no **Issues**
-    e atribuídas aos demais colegas.
-    As tarefas devem ser resolvidas individualmente,
-    utilize a ajuda de seus colegas, mas resolva o que foi atribuído a vocês, esse é sua tarefa/ responsabilidade! 
+    Tarefas devem ser criadas no **Issues** e atribuídas aos demais colegas.
+    As tarefas devem ser resolvidas individualmente! Utilize a ajuda de seus colegas, mas resolva o que foi atribuído a vocês, essa é sua tarefa/ responsabilidade! 
+    
+    
 
 ## Controle de Tarefas e Repositório
 
@@ -43,11 +43,11 @@ Nas discussões com os outros colegas o scrum master deve definir os módulos qu
 - Realizar os pull-requests
 - Testar os códigos
 
-# Instruções 
+## Instruções 
 
 A pasta contém dois diretórios distintos : `src/` e `Quartus/`. O diretório `src` contém os arquivos fontes que deverão ser editados para implementar o projeto. O diretório `quartus/` contém o projeto que possibilitará compilar os módulos e testar em hardware.
 
-## Entendendo o projeto
+### Entendendo o projeto
 
 A pasta do projeto C no repositório `Z01.1` possui a seguinte estrutura :
 
@@ -78,15 +78,21 @@ $ ./testeLogicaCombinacional.py
 
 <script id="asciicast-eolZDZIqCgTe3UQsX5jLrkF3D" src="https://asciinema.org/a/eolZDZIqCgTe3UQsX5jLrkF3D.js" async></script>
 
-## Módulos : 
+!!! note
+    No exemplo de teste verificamos que aimplementação da `nand` está errada.
+
+## Módulos
 
 - [ ] Implementar todos os módulos listados
 - [ ] Todos os módulos devem passar nos testes
 - [ ] Travis deve estar configurado e funcionando
 - [ ] Implementar acionamento do diplay de 7 segmentos e demonstrar na FPGA
 
-> Esses arquivos estão localizados em `C-Logica-Combinacional/src/rtl/`
-> Utilize um editor de texto/código de sua preferência para a implementação, valide rodando o script de testes.
+!!! note 
+    Esses arquivos estão localizados em `C-Logica-Combinacional/src/rtl/`
+
+!!! tip
+    Utilize o VScode para editar os arquivos vhdl e valide a implementação executando o script de testes.
 
 Deve-se implementar os seguintes circuitos combinacionais: 
 
@@ -146,42 +152,50 @@ Deve-se implementar os seguintes circuitos combinacionais:
     - **Arquivo**   : `Mux8Way16.vhd`
     - **Descrição** : Multiplexa 8 entradas de 16 bits cada em uma saída de 16 bits.
 
-- [Controle do display de 7 segmentos](C-Logica-Combinacional-Lab-1#4-sete-segmentos)
+- Display de 7s
     - **Arquivo**: `/src/toplevel.vhd'
-    - **Descrição**: Deve ler as chaves SW e exibir seu valor no display de 7s.
+    - **Descrição**: Deve ler as chaves da FPGA SW e exibir seu valor no display de 7s (Hexa, Decimal).
 
-### DICAS
+!!! warning "Display 7s"
+    Esse módulo não possui teste unitário, deve-se utilizar a FPGA para validar.
 
-Existem diversos locais onde podem tirar dúvida de `VHDL`, por exemplo : 
+!!! tip "Display 7s"
+    Esse item é uma continuação do que foi realizado no [laboratório 5](/C-Logica-Combinacional-Lab-1/), onde vocês tiveram
+    que exibir um valor constante no display de 7s. 
+    
+    Para cada segmento do display, vocês devem encontrar uma equação booleana que o represente, e então implementar em VHDL e 
+    testar na FPGA.
 
-- :+1: http://esd.cs.ucr.edu/labs/tutorial/
-- https://courseware.ee.calpoly.edu/cpe-169/Misc_stuff/cheat_sheet.pdf
-- https://www.ics.uci.edu/~jmoorkan/vhdlref/vhdl_golden_reference_guide.pdf
+!!! note "Dicas VHDL"
+    Existem diversos locais onde podem tirar dúvida de `VHDL`, por exemplo : 
+
+    - :+1: http://esd.cs.ucr.edu/labs/tutorial/
+    - https://courseware.ee.calpoly.edu/cpe-169/Misc_stuff/cheat_sheet.pdf
+    - https://www.ics.uci.edu/~jmoorkan/vhdlref/vhdl_golden_reference_guide.pdf
+
 
 ## Rubricas para avaliação do projeto
 
-Cada integrante do grupo irá receber duas notas: Uma referente ao desenvolvimento total do projeto (Projeto) e outra referente a sua participação individual no grupo (que depende do seu papel).
+Cada integrante do grupo irá receber duas notas: Uma referente ao desenvolvimento total do projeto (Projeto) e outra referente a sua participação individual no grupo.
 
 ### Grupo
 
-| Conceito | Descritivo                                                                        |
-|----------|-----------------------------------------------------------------------------------|
-| I        | - Mais de três módulos com falha                                                  |
-|          |                                                                                   |
-| D        | - Até três Módulos com falha                                                      |
-|          |                                                                                   |
-| C        | - Ter criado o project no github                                                  |
-|          | - O travis configurado e funcionando                                              |
-|          | - Todos os módulos implementados e funcionado (teste ok)                          |
-|          | **- Implementando um único display de 7s (conta até 16 em hexadecimal)**          |
-|          |                                                                                   |
-| B        | **- Exibe três dígitos em Hexadecimal**                                           |
-|          |  (exibir até o valor 0x3FF = 2^10 - 1)                                                    |
-|          |                                                                                   |
-| A        | **- Exibe três dígitos em Decimal**                                                   |
+Para atingir os objetivos A e B, deve-se antes atingir o C.
+
+| Conceito | Descritivo                                                             |
+|----------|------------------------------------------------------------------------|
+| **A**    | Exibe três dígitos em Decimal                                          |
+| **B**    | Exibe três dígitos em Hexadecimal                                      |
+|          | (exibir até o valor 0x3FF = 2^10 - 1)                                  |
+| **C**    | Ter criado o project no github                                         |
+|          | O travis configurado e funcionando                                     |
+|          | Todos os módulos implementados e funcionado (teste ok)                 |
+|          | **Implementando um único display de 7s (conta até 16 em hexadecimal)** |
+| **D**    | Até três Módulos com falha                                             |
+| **I**    | Mais de três módulos com falha                                         |
 
 ### Individual
 
-As rubricas a serem seguidas serão comuns a todos os projeto e está descrito no link :
+As rubricas a serem seguidas serão comuns a todos os projeto e está descrito no link:
 
 - [Rubricas Scrum e Desenvolvedor](/Sobre-Rubricas/)
